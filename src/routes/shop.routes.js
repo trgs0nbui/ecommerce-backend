@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const shopController = require('./shop.controller')
-const { verifyToken, authorizeRoles } = require('../../common/middleware/auth.middleware')
+const shopController = require('../modules/shop/shop.controller')
+const { verifyToken, authorizeRoles } = require('../common/middleware/auth.middleware')
 
 router.post(
   '/',
