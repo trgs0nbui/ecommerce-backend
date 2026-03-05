@@ -8,7 +8,7 @@ const { verifyToken, authorizeRoles } = require('../common/middleware/auth.middl
  * @swagger
  * tags:
  *   name: Products
- *   description: Product management APIs
+ *   description: Product management APIs + endpoints for customers to browse products
  */
 
 
