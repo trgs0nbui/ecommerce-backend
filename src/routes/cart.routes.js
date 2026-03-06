@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 const cartController = require('../modules/cart/cart.controller')
-const verifyToken = require('../common/middleware/auth.middleware')
+const { verifyToken } = require('../common/middleware/auth.middleware')
 
 /**
  * @swagger
