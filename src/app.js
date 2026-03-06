@@ -3,7 +3,8 @@ const cors = require("cors");
 const morgan = require("morgan");
 const authRoutes = require("./routes/auth.routes");
 const shopRoutes = require("./routes/shop.routes");
-const productRoutes = require('./routes/product.routes')
+const productRoutes = require('./routes/product.routes');
+const cartRoutes = require('./routes/cart.routes');
 
 const setupSwagger = require("./config/swagger");
 
@@ -19,5 +20,6 @@ app.use(morgan("dev"));
 app.use("/api/auth", authRoutes);
 app.use("/api/shops", shopRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/cart', cartRoutes);
 
 module.exports = app;
